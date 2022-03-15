@@ -1,17 +1,18 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from 'react'
 
 export interface CarModel {
-  modelName: String
+  modelName: string
   overlayNode: ReactNode
   sectionRef: React.RefObject<HTMLElement>
 }
 
 interface ModelsContext {
   wrapperRef: React.RefObject<HTMLElement>
-  registeredModels: CarModel []
+  registeredModels: CarModel[]
   registerModel: (model: CarModel) => void
-  unregisteredModel: (modelName: string) => void
+  unregisterModel: (modelName: string) => void
   getModelByName: (modelName: string) => CarModel | null
 }
 
+// Export with default values
 export default React.createContext<ModelsContext>({} as ModelsContext)

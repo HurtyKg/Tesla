@@ -1,17 +1,17 @@
-import React from 'react';
-
-import { GlobalStyle } from './styles/GlobalStyles';
+import React from 'react'
 
 import Page from './components/Page'
 
-function App() {
-  return ( 
-    <>
-      <Page/>
+import { GlobalStyles } from './styles/GlobalStyles'
 
-      <GlobalStyle />
+function App() {
+  return (
+    <>
+      <Page />
+
+      <GlobalStyles />
     </>
   )
 }
 
-export default App;
+export default App
